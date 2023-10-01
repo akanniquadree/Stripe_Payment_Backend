@@ -6,9 +6,12 @@ const stripe = require("stripe")(process.env.SECRET_KEY)
 const userRouter = express.Router()
 
 const storeItems = new Map([
-    ["mysQuXqVUG6yJ7qekAax",{name: "Basic", amount: 9990 }],
-    ["dL5e0aZAN2y9q0TLQq4b",{name: "Standard", amount:1549 }],
-    ["Vz0ZWl6GjahY7eQwwgY4",{ name: "Premuim", amount: 2030 }]
+    ["Basic",{name: "Basic", amount: 9990 }],
+    ["Standard",{name: "Standard", amount:1549 }],
+    ["Premuim",{ name: "Premuim", amount: 2030 }]
+    // ["mysQuXqVUG6yJ7qekAax",{name: "Basic", amount: 9990 }],
+    // ["dL5e0aZAN2y9q0TLQq4b",{name: "Standard", amount:1549 }],
+    // ["Vz0ZWl6GjahY7eQwwgY4",{ name: "Premuim", amount: 2030 }]
 ])
 
 //Update User
